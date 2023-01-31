@@ -1,0 +1,7 @@
+@use 'header';
+@use 'colors';
+
+* {
+    font-family: colors.$fuente;
+    font-weight: 500 ;
+}
