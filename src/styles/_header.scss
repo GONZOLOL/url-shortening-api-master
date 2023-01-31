@@ -1,5 +1,16 @@
 .navBar-header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    margin: 2% 8% 2% 8%;
+}
+.navBar-header-left {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.navBar-header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
 }
