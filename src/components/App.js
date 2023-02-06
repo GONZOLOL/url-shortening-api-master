@@ -17,7 +17,10 @@ function App() {
         <input type="text" />
       </div>
       <div className='secondary-container'>
-        
+        <div className='secondaryInfo'>
+          <p className='letter3'>Advanced Statistics</p>
+          <p className='letter4'>Track how your links are performing across the web with <br/> our advanced statistics dashboard.</p>
+        </div>
       </div>
     </>
   );
