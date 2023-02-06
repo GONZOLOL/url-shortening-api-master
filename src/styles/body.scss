@@ -1,0 +1,44 @@
+@use 'styles';
+
+.main-container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: 2% 0% 2% 8%;
+    
+}
+    .left-text{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+    }
+    .right-image{
+        display: flex;
+        white-space: nowrap;
+    }
+    .boton {
+        background-color: styles.$Cyan;
+        padding: 10px;
+        border-radius: 20px;
+        color: white;
+    }
+    .letter1{
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 90px
+    }
+    .letter2{
+        font-size: 23px;
+        color: styles.$Gray;
+    }
+
+.input-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10%;
+}
+
+.secondary-container {
+
+}

@@ -1,3 +1,5 @@
+@use 'styles';
+
 .navBar-header {
     display: flex;
     justify-content: space-between;
@@ -13,4 +15,8 @@
     align-items: center;
     justify-content: flex-end;
     gap: 10px;
+}
+
+.navBar-header-left a , .navBar-header-right a:first-of-type{
+    color: styles.$Gray;
 }
