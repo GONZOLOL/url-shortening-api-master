@@ -1,7 +1,12 @@
 @use 'header';
-@use 'colors';
+@use 'styles';
+@use 'body';
 
 * {
-    font-family: colors.$fuente;
+    font-family: styles.$fuente;
     font-weight: 500 ;
+}
+
+body{
+    background: linear-gradient( white 70% , styles.$Gray2 30%);
 }
