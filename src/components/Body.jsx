@@ -7,7 +7,7 @@ function Body() {
                 <div className='left-text'>
                     <p className='letter1'>More than just <br/>shorter links</p>
                     <p className='letter2'>Build your brand's recognition and get detailed <br/> insights on how your links are performing.</p>
-                    <a className='boton'>Get Started</a>
+                    <button className='boton'>Get Started</button>
                 </div>
                 <div className='right-image'>
                     <IllustrationWorking />
