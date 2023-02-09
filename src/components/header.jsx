@@ -1,19 +1,18 @@
 import {ReactComponent as Logo} from '../images/logo.svg';
 
-
 function Header() {
     return (
         <>
             <header className='navBar-header'>
                 <div className="navBar-header-left">
                     <Logo />
-                    <a>Features</a>
-                    <a>Pricing</a>
-                    <a>Resources</a>
+                    <span>Features</span>
+                    <span>Pricing</span>
+                    <span>Resources</span>
                 </div>
                 <div className="navBar-header-right">
-                    <a>login</a>
-                    <a className='boton'>SignUp</a>
+                    <span>login</span>
+                    <span className='boton'>SignUp</span>
                 </div>
             </header>
         </>
