@@ -1,6 +1,7 @@
-const Button = (props) => (
-    <Button>
-        <Button label={props.buttonLabel}/>
-        <Button size={props.buttonSize} />
-    </Button>
-);
+import React from "react";
+
+function Button({ type , text}) {
+    return <button className={type}>{text}</button>
+}
+
+export default Button;

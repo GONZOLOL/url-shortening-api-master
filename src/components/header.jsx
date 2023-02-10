@@ -1,4 +1,5 @@
 import {ReactComponent as Logo} from '../images/logo.svg';
+import Button from "./Button";
 
 function Header() {
     return (
@@ -11,8 +12,8 @@ function Header() {
                     <a href="#">Resources</a> 
                 </div>
                 <div className="header__right">
-                    <button>login</button>
-                    <button className='boton'>SignUp</button>
+                    <a href='#'>login</a>
+                    <Button type="btn btn--header" text="SignUp"/>
                 </div>
             </section>
         </>

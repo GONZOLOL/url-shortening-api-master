@@ -10,6 +10,7 @@
         display: flex;
         flex-flow: column wrap;
         flex: 1 1;
+        align-items: baseline;
     }
     .mainContainer__rightImage{
         display: flex;
@@ -35,33 +36,27 @@
     }
 }
 
-    .inputGroup{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-image: url('../images/bg-shorten-desktop.svg');
-        background-color: styles.$Dark-Violet;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 150px;
-        border-radius: 12px;
+.inputGroup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/bg-shorten-desktop.svg');
+    background-color: styles.$Dark-Violet;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 150px;
+    border-radius: 12px;
 
-        .inputGroup__content input {
-            padding: 15px 450px 15px 20px;
-        }
-        .inputGroup__content button {
-            width: 150px;
-            height: 60px;
-            color: white;
-            background-color: styles.$Cyan;
-        }
-        .inputGroup__content button, input {
-            margin: 10px;
-            border-radius: 10px;
-            font-size: 18px;
-        }
-        
+    .inputGroup__content input {
+        padding: 15px 450px 15px 20px;
     }
+    .inputGroup__content button, input {
+        margin: 10px;
+        border-radius: 10px;
+        font-size: 18px;
+    }
+    
+}
 
     .secondaryContainer {
         display: flex;

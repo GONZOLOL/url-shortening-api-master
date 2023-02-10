@@ -1,6 +1,7 @@
 @use 'header';
 @use 'styles';
 @use 'body';
+@use 'buttons';
 
 * {
     font-family: styles.$fuente;
