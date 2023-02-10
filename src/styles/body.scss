@@ -55,27 +55,44 @@
         border-radius: 10px;
         font-size: 18px;
     }
-    
 }
 
-    .secondaryContainer {
+.secondaryContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 110px;
+    flex-direction: column;
+    background-color: styles.$Gray2;
+
+    .secondaryContainer__info{
         display: flex;
         justify-content: center;
-        margin-top: 110px;
-        .secondaryInfo{
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .letter3{
+        font-size: 34px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    .letter4{
+        font-size: 16px;
+        color: styles.$Gray;
+    }
+    .cardContainer{
+        display: flex;
+        flex-direction: row;
+        .card{
             display: flex;
-            justify-content: center;
-            align-items: center;
             flex-direction: column;
-            text-align: center;
-        }
-        .letter3{
-            font-size: 34px;
-            font-weight: 700;
-            margin-bottom: 15px;
-        }
-        .letter4{
-            font-size: 16px;
-            color: styles.$Gray;
+            flex: 1 1;
+            .card__image{
+               background-color: styles.$Dark-Violet;
+               border-radius: 100%;
+               padding: 100px;
+               scale: 0.5;
+            }
         }
     }
+}
