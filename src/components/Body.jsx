@@ -3,26 +3,28 @@ import {ReactComponent as IllustrationWorking} from '../images/illustration-work
 function Body() {
     return (
         <>
-            <div className='main-container'>
-                <div className='left-text'>
-                    <p className='letter1'>More than just <br/>shorter links</p>
-                    <p className='letter2'>Build your brand's recognition and get detailed <br/> insights on how your links are performing.</p>
+            <section className='mainContainer'>
+                <div className='mainContainer__leftText'>
+                    <span className='letter1'>More than just <br/>shorter links</span>
+                    <span className='letter2'>Build your brand's recognition and get detailed <br/> insights on how your links are performing.</span>
                     <button className='boton'>Get Started</button>
                 </div>
-                <div className='right-image'>
+                <div className='mainContainer__rightImage'>
                     <IllustrationWorking />
                 </div>
-            </div>
-            <div className='input-group'>
-                <input type="text" />
-                <button>Shorten it!</button>
-            </div>
-            <div className='secondary-container'>
-                <div className='secondaryInfo'>
-                    <p className='letter3'>Advanced Statistics</p>
-                    <p className='letter4'>Track how your links are performing across the web with <br/> our advanced statistics dashboard.</p>
-                </div>
-            </div>
+                </section>
+                <section className='inputGroup'>
+                    <div className='inputGroup__content'>
+                        <input type="text" placeholder='Shorten a link here...'/>
+                        <button>Shorten it!</button>
+                    </div>
+                </section>
+                <section className='secondaryContainer'>
+                    <div className='secondaryInfo'>
+                        <span className='letter3'>Advanced Statistics</span>
+                        <span className='letter4'>Track how your links are performing across the web with <br/> our advanced statistics dashboard.</span>
+                    </div>
+            </section>
         </>
     )
 }

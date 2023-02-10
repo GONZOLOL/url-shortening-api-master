@@ -1,66 +1,86 @@
 @use 'styles';
 
-.main-container {
+.mainContainer {
     display: flex;
-    flex-flow: row wrap;
     align-items: center;
-    margin: 2% 0% 2% 8%;
     justify-content: space-between;
-}
-    .left-text{
+    margin: 140px 0px 145px 0px;
+
+    .mainContainer__leftText{
         display: flex;
         flex-flow: column wrap;
-        align-items: flex-start;
+        flex: 1 1;
     }
-    .right-image{
+    .mainContainer__rightImage{
         display: flex;
-        white-space: nowrap;
-    }
-    .boton {
-        background-color: styles.$Cyan;
-        padding: 10px;
-        border-radius: 20px;
-        color: white;
+        position: relative;
+        flex: 1 1;
+        svg {
+            position: absolute;
+            top: -250px;
+            right: -300px;
+            transform: scale(.9);
+        }
     }
     .letter1{
-        font-size: 80px;
+        font-size: 68px;
         font-weight: 700;
-        line-height: 90px
+        line-height: 80px;
+        letter-spacing: -2px;
     }
     .letter2{
-        font-size: 23px;
+        font-size: 18px;
         color: styles.$Gray;
+        margin: 10px 0px 40px;
+    }
+}
+
+    .inputGroup{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url('../images/bg-shorten-desktop.svg');
+        background-color: styles.$Dark-Violet;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 150px;
+        border-radius: 12px;
+
+        .inputGroup__content input {
+            padding: 15px 450px 15px 20px;
+        }
+        .inputGroup__content button {
+            width: 150px;
+            height: 60px;
+            color: white;
+            background-color: styles.$Cyan;
+        }
+        .inputGroup__content button, input {
+            margin: 10px;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+        
     }
 
-.input-group{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    margin: 10%;
-    padding: 10%;
-    background-image: url('../images/bg-shorten-desktop.svg');
-    background-color: styles.$Very-Dark-Violet;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.secondary-container {
-    display: flex;
-    justify-content: center;
-}
-    .secondaryInfo{
+    .secondaryContainer {
         display: flex;
         justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-    }
-    .letter3{
-        font-size: 26px;
-        font-weight: 700;
-    }
-    .letter4{
-        font-size: 16px;
-        color: styles.$Gray;
+        margin-top: 110px;
+        .secondaryInfo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        .letter3{
+            font-size: 34px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        .letter4{
+            font-size: 16px;
+            color: styles.$Gray;
+        }
     }

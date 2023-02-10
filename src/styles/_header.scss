@@ -1,22 +1,23 @@
 @use 'styles';
 
-.navBar-header {
+.header {
     display: flex;
     justify-content: space-between;
-    margin: 2% 8% 2% 8%;
-}
-.navBar-header-left {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-}
-.navBar-header-right {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 10px;
+
+    .header__left {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        font-size: 15px;
+    }
+    .header__right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+    }
 }
 
-.navBar-header-left a , .navBar-header-right a:first-of-type{
+.header__left a , .header__right a:first-of-type{
     color: styles.$Gray;
 }
