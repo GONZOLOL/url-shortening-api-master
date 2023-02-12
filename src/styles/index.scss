@@ -1,7 +1,9 @@
-@use 'header';
 @use 'styles';
-@use 'body';
+@use 'header';
+@use 'content';
+@use 'footer';
 @use 'buttons';
+@use 'card';
 
 * {
     font-family: styles.$fuente;
@@ -13,9 +15,8 @@
 }
 body{
     max-width: 1440px;
-    padding: 40px 130px ;
+    max-height: 2269px;
+    padding: 40px 150px ;
     margin: 0 auto;
-    padding: 50px 100px;
-    background: linear-gradient( white 50% , styles.$Gray2 50%);
     overflow-x: hidden;
 }

@@ -18,11 +18,13 @@ export default function Content() {
                     <IllustrationWorking />
                 </div>
             </section>
-            <section className='inputGroup'>
-                <div className='inputGroup__content'>
-                    <input type="text" placeholder='Shorten a link here...'/>
-                    <Button type="btn btn-input" text="Shorten it!" />
-                </div>
+            <section className='inputContainer'>
+                <section className='inputContainer__inputGroup'>
+                    <div className='inputGroup__content'>
+                        <input type="text" placeholder='Shorten a link here...'/>
+                        <Button type="btn btn--input" text="Shorten it!" />
+                    </div>
+                </section>
             </section>
             <section className='secondaryContainer'>
                 <div className='secondaryContainer__info'>
@@ -46,6 +48,10 @@ export default function Content() {
                         svg= {FullyCustomizable}
                     />
                 </div>
+            </section>
+            <section className='footerContainer'>
+                <span className="footerContainer__mainText">Boost your links today</span>
+                <Button type="btn btn--footer" text="Get Started" />
             </section>
         </>
     )
