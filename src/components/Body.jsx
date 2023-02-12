@@ -31,19 +31,16 @@ function Body() {
                 </div>
                 <div className='cardContainer'>
                     <Card 
-                        type="card" 
                         tittle="Brand Recognition" 
                         text="Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content." 
                         svg= {BrandRecognition}
                     />
                     <Card 
-                        type="card" 
                         tittle="Detailed Records" 
                         text="Gain insights into who is clicking your links. Knowing when and where people engage with your content helps intorm better decisions." 
                         svg= {DetailedRecords}
                     />
                     <Card 
-                        type="card" 
                         tittle="Fully Customizable" 
                         text="Improve brand awareness and content discoverability through customizable links, supercharging audience engagement." 
                         svg= {FullyCustomizable}
