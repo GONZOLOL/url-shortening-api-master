@@ -5,7 +5,7 @@ import FullyCustomizable from '../images/icon-fully-customizable.svg';
 import Button from "./Button";
 import Card from "./Card";
 
-function Body() {
+export default function Content() {
     return (
         <>
             <section className='mainContainer'>
@@ -50,6 +50,3 @@ function Body() {
         </>
     )
 }
-
-export default Body;
-
