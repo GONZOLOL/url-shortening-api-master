@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 140px 0px 145px 0px;
+    margin: 110px 0px 145px 0px;
 
     .mainContainer__leftText{
         display: flex;
@@ -18,13 +18,12 @@
         flex: 1 1;
         svg {
             position: absolute;
-            top: -250px;
-            right: -300px;
-            transform: scale(.9);
+            top: -230px;
+            right: -270px;
         }
     }
     .letter1{
-        font-size: 68px;
+        font-size: 80px;
         font-weight: 700;
         line-height: 80px;
         letter-spacing: -2px;
