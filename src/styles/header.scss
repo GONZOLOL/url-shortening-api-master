@@ -1,0 +1,23 @@
+@use 'styles';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+
+    .header__left {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        font-size: 15px;
+    }
+    .header__right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 30px;
+    }
+}
+
+.header__left a , .header__right a:first-of-type{
+    color: styles.$Gray;
+}

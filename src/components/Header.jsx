@@ -1,20 +1,21 @@
 import {ReactComponent as Logo} from '../images/logo.svg';
+import Button from "./Button";
 
 function Header() {
     return (
         <>
-            <header className='navBar-header'>
-                <div className="navBar-header-left">
+            <section className='header'>
+                <div className="header__left">
                     <Logo />
-                    <span>Features</span>
-                    <span>Pricing</span>
-                    <span>Resources</span>
+                    <a href="#">Features</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Resources</a> 
                 </div>
-                <div className="navBar-header-right">
-                    <span>login</span>
-                    <span className='boton'>SignUp</span>
+                <div className="header__right">
+                    <a href='#'>login</a>
+                    <Button type="btn btn--header" text="SignUp"/>
                 </div>
-            </header>
+            </section>
         </>
     );
   }

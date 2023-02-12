@@ -1,12 +1,22 @@
-@use 'header';
 @use 'styles';
-@use 'body';
+@use 'header';
+@use 'content';
+@use 'footer';
+@use 'buttons';
+@use 'card';
 
 * {
     font-family: styles.$fuente;
     font-weight: 500 ;
+    box-sizing: border-box;
 }
-
+* a {
+    text-decoration: none;
+}
 body{
-    background: linear-gradient( white 70% , styles.$Gray2 30%);
+    max-width: 1440px;
+    max-height: 2269px;
+    padding: 40px 150px ;
+    margin: 0 auto;
+    overflow-x: hidden;
 }

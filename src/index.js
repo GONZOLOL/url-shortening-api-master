@@ -2,13 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/index.scss';
 import Header from './components/Header';
-import Body from './components/Body';
+import Content from './components/Content';
+import Footer from './components/Footer';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Header />
-    <Body/>
+    <Content />
+    <Footer />
   </React.StrictMode>
 );
