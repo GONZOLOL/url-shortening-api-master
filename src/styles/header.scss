@@ -18,6 +18,9 @@
     }
 }
 
-.header__left a , .header__right a:first-of-type{
+.header a{
     color: styles.$Gray;
+    &:hover{
+        color: black;
+    }
 }

@@ -14,29 +14,29 @@ export default function Footer() {
                 </div>
                 <div className='footer__elements'>
                     <div className='footer__text'>
-                        <span className='text__tittle'>Feature</span>
-                        <span className='text__normal'>Link Shortening</span>
-                        <span className='text__normal'>Branded Links</span>
-                        <span className='text__normal'>Analytics</span>
+                        <a href='#' className='text__tittle'>Feature</a>
+                        <a href='#' className='text__normal'>Link Shortening</a>
+                        <a href='#' className='text__normal'>Branded Links</a>
+                        <a href='#' className='text__normal'>Analytics</a>
                     </div>
                     <div className='footer__text'>
-                        <span className='text__tittle'>Resources</span>
-                        <span className='text__normal'>Blog</span>
-                        <span className='text__normal'>Developers</span>
-                        <span className='text__normal'>Support</span>
+                        <a href='#' className='text__tittle'>Resources</a>
+                        <a href='#' className='text__normal'>Blog</a>
+                        <a href='#' className='text__normal'>Developers</a>
+                        <a href='#' className='text__normal'>Support</a>
                     </div>
                     <div className='footer__text'>
-                        <span className='text__tittle'>Company</span>  
-                        <span className='text__normal'>About</span>
-                        <span className='text__normal'>Our Team</span>
-                        <span className='text__normal'>Careers</span>
-                        <span className='text__normal'>Contact</span>
+                        <a href='#' className='text__tittle'>Company</a>  
+                        <a href='#' className='text__normal'>About</a>
+                        <a href='#' className='text__normal'>Our Team</a>
+                        <a href='#' className='text__normal'>Careers</a>
+                        <a href='#' className='text__normal'>Contact</a>
                     </div>
                     <div className='footer__logos'>
-                        <Facebook />
-                        <Twiter />
-                        <Pinterest />
-                        <Instagram />
+                        <Facebook className='logo'/>
+                        <Twiter className='logo'/>
+                        <Pinterest className='logo'/>
+                        <Instagram className='logo'/>
                     </div>
                 </div>
             </section>

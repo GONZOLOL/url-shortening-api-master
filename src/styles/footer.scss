@@ -11,7 +11,7 @@
 
     .logo-white{
         display: flex;
-        filter: invert(100%);
+        fill: #ffffff;
         margin-top: 80px;
     }
 
@@ -24,20 +24,31 @@
         .footer__text{
             display: flex;
             flex-direction: column;
-            gap: 10px;
-
-            .text__tittle{
-                color: #ffffff;
-                font-weight: 700;
-            }
-            .text__normal{
-                color: styles.$Gray;
+            gap: 10px
+        }
+        .footer__text a{
+            &:hover{
+                color: styles.$Cyan;
             }
         }
+        .text__tittle{
+            color: #ffffff;
+            font-weight: 700;
+        }
+        .text__normal{
+            color: styles.$Gray;
+        }
+
         .footer__logos{
             display: flex;
             gap: 20px;
+            cursor: pointer;    
         }
-    }
-
+        .logo{
+            fill: #ffffff;
+            &:hover{
+                fill: styles.$Cyan;
+            }
+        }   
+    }       
 }
