@@ -1,68 +1,6 @@
 @use 'styles';
 
-.mainContainer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 155px 0px 165px 0px;
-
-    .mainContainer__leftText{
-        display: flex;
-        flex-flow: column wrap;
-        flex: 1 1;
-        align-items: baseline;
-    }
-    .mainContainer__rightImage{
-        display: flex;
-        position: relative;
-        flex: 1 1;
-        svg {
-            position: absolute;
-            top: -230px;
-            right: -270px;
-        }
-    }
-    .letter1{
-        font-size: 80px;
-        font-weight: 700;
-        line-height: 80px;
-        letter-spacing: -2px;
-    }
-    .letter2{
-        font-size: 18px;
-        color: styles.$Gray;
-        margin: 10px 0px 40px;
-    }
-}
-.inputContainer {
-    width: 135%;
-    padding: 0px 16%;
-    margin-left: -16%;
-    background: linear-gradient(#fff 50%, styles.$Gray2 50%);    
-}
-
-.inputContainer__inputGroup{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url('../images/bg-shorten-desktop.svg');
-    background-color: styles.$Dark-Violet;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 165px;
-    border-radius: 10px;
-    
-    .inputGroup__content input {
-        padding: 15px 500px 15px 20px;
-    }
-    .inputGroup__content button, input {
-        margin: 10px;
-        border-radius: 8px;
-        font-size: 18px;
-    }
-}
-
-.secondaryContainer {
+.contentContainer {
     display: flex;
     justify-content: center;
     
@@ -72,7 +10,7 @@
     padding: 150px 16% 0px 16%;
     margin-left: -16%;
 
-    .secondaryContainer__info{
+    .contentContainer__info{
         display: flex;
         justify-content: center;
         align-items: center;

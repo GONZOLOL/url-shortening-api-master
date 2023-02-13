@@ -16,13 +16,14 @@
         padding: 70px 30px 50px 30px;
         max-height: 2700px;
         justify-content: center;
+        z-index: 1;
 
         .card__box__image{
             display: flex;
             position: absolute;
             background-color: styles.$Dark-Violet;
             border-radius: 50%;
-            bottom: 250px;
+            top: -50px;
         }
         .card__image{
             padding: 30px;
@@ -37,31 +38,28 @@
             font-size: 18px;
         }
     }
-    .card:nth-child(2){
-        top: 50px;
+
+    .card:not(:nth-child(1)){
 
         &::before {
-            content: "-";
-            position: absolute;
-            left: -35px;
-            bottom: 110px;
-            font-size: 70px;
-            font-weight: 700;
-            color: styles.$Cyan;
+        content: "";
+        position: absolute;
+        left: -30px;
+        top: 100px;
+        width: 30px;
+        height: 10px;
+        background-color: styles.$Cyan;
         }
+    }
+
+    .card:nth-child(2){
+        top: 50px;
     }
    
     .card:nth-child(3){
         top: 100px;
-
         &::before {
-            content: "-";
-            position: absolute;
-            left: -35px;
-            bottom: 160px;
-            font-size: 70px;
-            font-weight: 700;
-            color: styles.$Cyan;
+            top: 50px;
         }
     }
 }

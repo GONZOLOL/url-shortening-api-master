@@ -1,0 +1,31 @@
+@use "styles";
+
+.inputContainer {
+    width: 135%;
+    padding: 0px 16%;
+    margin-left: -16%;
+    background: linear-gradient(#fff 50%, styles.$Gray2 50%);    
+}
+
+.inputContainer__inputGroup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../images/bg-shorten-desktop.svg');
+    background-color: styles.$Dark-Violet;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 165px;
+    border-radius: 10px;
+    
+    .inputGroup__content input {
+        width: 800px;
+        height: 20px;
+        padding: 3%;
+    }
+    .inputGroup__content button, input {
+        margin: 10px;
+        border-radius: 8px;
+        font-size: 18px;
+    }
+}
