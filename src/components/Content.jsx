@@ -49,8 +49,8 @@ export default function Content() {
                     />
                 </div>
             </section>
-            <section className='footerContainer'>
-                <span className="footerContainer__mainText">Boost your links today</span>
+            <section className='lastContent'>
+                <span className="lastContent__mainText">Boost your links today</span>
                 <Button type="btn btn--footer" text="Get Started" />
             </section>
         </>
