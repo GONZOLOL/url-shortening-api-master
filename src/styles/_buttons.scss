@@ -13,6 +13,10 @@
     &:hover{
         background-color: styles.$alterCyan;
     }
+
+    &.copied{
+        background-color: styles.$Dark-Violet;
+    }
 }
 
 .btn--header{
