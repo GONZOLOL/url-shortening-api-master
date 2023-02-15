@@ -1,5 +1,12 @@
 import React from "react";
 
-export default function Button({ type , text}) {
-    return <button className={type}>{text}</button>
+export default function Button({ dataShortLink, childClick , type, estilo , text }) {
+    
+    return <button 
+                data-shortlink = {dataShortLink} 
+                onClick = {childClick}  
+                type = {type} 
+                className = {estilo}
+
+            >{text}</button>
 }

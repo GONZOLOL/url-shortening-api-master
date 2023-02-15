@@ -32,7 +32,7 @@ export default function Content() {
             </section>
             <section className='lastContent'>
                 <span className="lastContent__mainText">Boost your links today</span>
-                <Button type="btn btn--footer" text="Get Started" />
+                <Button estilo="btn btn--footer" text="Get Started" />
             </section>
         </>
     )
