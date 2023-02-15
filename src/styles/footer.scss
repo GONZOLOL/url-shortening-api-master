@@ -1,2 +1,54 @@
 @use 'styles';
 
+.footerContainer{
+    display: flex;
+    gap: 300px;
+    background-color: styles.$Very-Dark-Violet;
+    width: 135%;
+    height: 300px;
+    padding: 00px 16% 0px 16%;
+    margin-left: -16%;
+
+    .logo-white{
+        display: flex;
+        fill: #ffffff;
+        margin-top: 80px;
+    }
+
+    .footer__elements{
+        display: flex;
+        flex-direction: row;
+        margin-top: 80px;
+        gap: 100px;
+        
+        .footer__text{
+            display: flex;
+            flex-direction: column;
+            gap: 10px
+        }
+        .footer__text a{
+            &:hover{
+                color: styles.$Cyan;
+            }
+        }
+        .text__tittle{
+            color: #ffffff;
+            font-weight: 700;
+        }
+        .text__normal{
+            color: styles.$Gray;
+        }
+
+        .footer__logos{
+            display: flex;
+            gap: 20px;
+            cursor: pointer;    
+        }
+        .logo{
+            fill: #ffffff;
+            &:hover{
+                fill: styles.$Cyan;
+            }
+        }   
+    }       
+}

@@ -10,9 +10,12 @@
     background-color: styles.$Cyan;
     color: #fff;
 
-    &:active{
-        transform: scale(0.98);
-        box-shadow: none;
+    &:hover{
+        background-color: styles.$alterCyan;
+    }
+
+    &.copied{
+        background-color: styles.$Dark-Violet;
     }
 }
 

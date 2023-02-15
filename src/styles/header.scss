@@ -1,8 +1,13 @@
 @use 'styles';
 
+.headerWrapper{
+    max-width: 100%;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
+    max-width: 1440px;
 
     .header__left {
         display: flex;
@@ -18,6 +23,9 @@
     }
 }
 
-.header__left a , .header__right a:first-of-type{
+.header a{
     color: styles.$Gray;
+    &:hover{
+        color: black;
+    }
 }

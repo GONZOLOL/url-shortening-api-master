@@ -1,22 +1,119 @@
-@use 'styles';
-@use 'header';
-@use 'content';
-@use 'footer';
-@use 'buttons';
-@use 'card';
+@use "styles";
+@use "header";
+@use "downHeader";
+@use "input";
+@use "resultCard";
+@use "content";
+@use "footer";
+@use "buttons";
+@use "card";
 
 * {
-    font-family: styles.$fuente;
-    font-weight: 500 ;
-    box-sizing: border-box;
+  font-family: styles.$fuente;
+  font-weight: 500;
+  box-sizing: border-box;
 }
 * a {
-    text-decoration: none;
+  text-decoration: none;
 }
-body{
-    max-width: 1440px;
-    max-height: 2269px;
-    padding: 40px 150px ;
-    margin: 0 auto;
-    overflow-x: hidden;
+body {
+  padding: 40px 150px;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 1427px) {
+  .Container {
+    flex-direction: column-reverse;
+    gap: 50px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    .Container__rightImage {
+      display: flex;
+      position: static;
+      justify-content: flex-end;
+      svg {
+        position: static;
+      }
+    }
+    .Container__leftText {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      .letter1 {
+        font-size: 60px;
+        line-height: 40px;
+      }
+    }
+  }
+
+  .inputContainer__inputGroup{
+    padding: 30px 0px;
+  }
+
+  .inputGroup__content{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .inputGroup__content button, input{
+    width: 90% !important;
+    padding: 10px 20px !important;
+  } 
+
+  .inputGroup__content button{
+    font-size: 20px;
+  }
+
+  .shortedUrlWrapper{
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 20px;
+
+    &::before{
+      content: "";
+      position: absolute;
+      display: flex;
+      width: 100%;
+      height: 3px;
+      left: 0px;
+      top: 50px;
+      background-color: styles.$Gray2;
+    }
+  }
+
+  .shortedUrlWrapper button{
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .cardContainer {
+    flex-direction: column;
+    margin: 100px 0px 200px 0px;
+    .card {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 0;
+    }
+
+    .card:not(:nth-child(1)) {
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -80px;
+        width: 10px;
+        height: 50px;
+        margin: 0 auto;
+        background-color: styles.$Cyan;
+      }
+    }
+
+    .card__box__image {
+      position: relative;
+    }
+  }
+
 }
