@@ -3,43 +3,54 @@
 .inputWrapper{
     background: linear-gradient(#fff 50%, styles.$Gray2 50%);
     width: 100%; 
-}
-
-.inputContainer__inputGroup{
-    display: flex;
-    max-width: 1440px; 
-    align-items: center;
-    justify-content: center;
-    background-image: url('../images/bg-shorten-desktop.svg');
-    background-color: styles.$Dark-Violet;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    padding: 40px;
     
-    .inputGroup__content {
+    .shortenerContainer__inputGroup{
+        margin: 0 auto;
+        max-width: 1110px;
+
         display: flex;
         justify-content: center;
-        gap: 20px;
-        width: 100%;
-    }
-    .inputGroup__content input {
-        font-size: 18px;
-        width: 50%;
         border-radius: 10px;
-        border: none;
-        padding: 0 30px;
-    }
+        padding: 40px;
+        gap: 30px;
 
-    .inputGroup__content button {
-        width: 15%;
+        background-image: url('../images/bg-shorten-desktop.svg');
+        background-color: styles.$Dark-Violet;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .shortenerInput{
+            font-size: 18px;
+            border-radius: 10px;
+            border: none;
+            padding: 15px 30px;
+            width: 70%;
+        }
+    
+        .shortenerButton {
+            font-size: 18px;
+            border-radius: 10px;
+            border: none;
+            padding: 15px 20px;
+            width: 15%;
+        }
     }
+    
 }
 
-.downInputWrapper{
-    display: flex;
-    gap: 15px;
-    flex-direction: column;
-    padding: 20px 0px;
+.resultCard__wrapper{
     background-color: styles.$Gray2;
+    width: 100%;
+
+    .resultCard__content{
+        margin: 0 auto;
+        max-width: 1110px;
+        
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 0px;
+
+    }
 }
+    

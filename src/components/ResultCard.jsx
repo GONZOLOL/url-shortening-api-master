@@ -12,6 +12,6 @@ export function ResultCard({ originalLink, shortLink }) {
             <span className='originalUrl'>{originalLink}</span>
             <a className='shortedUrl' href={shortLink} target="_blank" rel="noreferrer">{shortLink}</a>
             <Button dataShortLink={shortLink} estilo="btn btn--input" text="Copy" childClick={handleCopy} />
-        </div>   
+        </div>
     )
 }

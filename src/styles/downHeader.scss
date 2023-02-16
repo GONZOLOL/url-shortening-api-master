@@ -1,37 +1,42 @@
 @use 'styles';
 
-.Container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 155px 0px 165px 0px;
-    max-width: 1440px;
+.mainWrapper{
+    width: 100%;
+    
+    .Container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 155px 0px 165px 0px;
+        max-width: 1110px;
+        margin: 150px auto;
 
-    .Container__leftText{
-        display: flex;
-        flex-flow: column wrap;
-        flex: 1 1;
-        align-items: baseline;
-    }
-    .Container__rightImage{
-        display: flex;
-        position: relative;
-        flex: 1 1;
-        svg {
-            position: absolute;
-            top: -230px;
-            right: -270px;
+        .Container__leftText{
+            display: flex;
+            flex-flow: column wrap;
+            flex: 1 1;
+            align-items: baseline;
         }
-    }
-    .letter1{
-        font-size: 80px;
-        font-weight: 700;
-        line-height: 80px;
-        letter-spacing: -2px;
-    }
-    .letter2{
-        font-size: 18px;
-        color: styles.$Gray;
-        margin: 10px 0px 40px;
+        .Container__rightImage{
+            display: flex;
+            position: relative;
+            flex: 1 1;
+            svg {
+                position: absolute;
+                top: -230px;
+                right: -270px;
+            }
+        }
+        .letter1{
+            font-size: 70px;
+            font-weight: 700;
+            line-height: 80px;
+            letter-spacing: -2px;
+        }
+        .letter2{
+            font-size: 18px;
+            color: styles.$Gray;
+            margin: 10px 0px 40px;
+        }
     }
 }
