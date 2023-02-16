@@ -54,33 +54,36 @@ export default function Input() {
   return (
     <>
       <section className='inputWrapper'>
-        <form onSubmit={submit}>
-          <section className='inputContainer'>
-              <section className='inputContainer__inputGroup'>
-                  <div className='inputGroup__content'>
-                  <input
-                      required
-                      type='url'
-                      id='url'
-                      name='url'
-                      pattern='https?://.*'
-                      size='30'
-                      placeholder='Shorten a link here...'
-                  />
-                      <Button type="submit" estilo="btn btn--input" text="Shorten it!" />
-                  </div>
-              </section>
-          </section>
-        </form>
-          <div className='downInputWrapper'>
-            { outputUrl.map( (short, e) =>
-                  <ResultCard
-                    key = {short.code + '-' + e}
-                    originalLink = {short.original_link}
-                    shortLink = {short.full_short_link}
-                  />
-                )}
-          </div>
+        <div className='shortenerContainer'>
+          <form onSubmit={submit} className='shortenerContainer__inputGroup'>
+              <input
+                required
+                type='url'
+                id='url'
+                name='url'
+                pattern='https?://.*'
+                size='30'
+                placeholder='Shorten a link here...'
+                className='shortenerInput'
+              />
+              <Button 
+                type="submit" 
+                estilo="btn shortenerButton" 
+                text="Shorten it!"
+              />
+          </form>
+        </div>
+      </section>
+      <section className='resultCard__wrapper'>
+        <div className='resultCard__content'> 
+          { outputUrl.map( (short, e) =>
+                <ResultCard
+                  key = {short.code + '-' + e}
+                  originalLink = {short.original_link}
+                  shortLink = {short.full_short_link}
+                />
+            )}
+        </div>
       </section>
     </>
   )

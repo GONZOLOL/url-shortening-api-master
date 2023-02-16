@@ -6,47 +6,59 @@
     
     flex-direction: column;
     background-color: styles.$Gray2;
-    max-width: 1440px;
+    padding-top: 40px;
 
-
-    .contentContainer__info{
-        display: flex;
+    .contentWrapper{
+        max-width: 1110px;
+        margin: 0 auto;
+        .contentContainer__info{
+            display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         text-align: center;
         margin-bottom: 40px;
-    }
-    .letter3{
-        font-size: 43px;
-        font-weight: 700;
-        margin-bottom: 15px;
-    }
-    .letter4{
-        font-size: 20px;
-        color: styles.$Gray;
+        
+            .letter3{
+                font-size: 43px;
+                font-weight: 700;
+                margin-bottom: 15px;
+            }
+            .letter4{
+                font-size: 20px;
+                color: styles.$Gray;
+            }
+        }
+        .cardContainer{
+            
+        }
     }
 }
-
-.lastContent {
+.lastContentWrapper{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-
+    height: 250px;
+    
     background-image: url('../images/bg-boost-desktop.svg');
     background-color: styles.$Dark-Violet;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 250px;
-    width: 135%;
-    padding: 0px 16%;
-    margin-left: -16%;
-}
-.lastContent__mainText {
-    text-align: center;
-    font-size: 35px;
-    font-weight: 700;
-    color: #fff;
+    
+    .lastContent {
+        max-width: 1110px;
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        
+        .lastContent__mainText {
+            text-align: center;
+            font-size: 35px;
+            font-weight: 700;
+            color: #fff;
+        }
+    }
+
 }

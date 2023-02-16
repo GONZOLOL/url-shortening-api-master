@@ -1,28 +1,28 @@
 @use 'styles';
 
 .headerWrapper{
-    max-width: 100%;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1440px;
-
-    .header__left {
+    width: 100%;
+    
+    .header {
         display: flex;
-        align-items: center;
-        gap: 30px;
-        font-size: 15px;
-    }
-    .header__right {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        gap: 30px;
+        justify-content: space-between;
+        max-width: 1110px;
+        margin: 40px auto;
+    
+        .header__left {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            font-size: 15px;
+        }
+        .header__right {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 30px;
+        }
     }
 }
-
 .header a{
     color: styles.$Gray;
     &:hover{

@@ -12,12 +12,13 @@
   font-family: styles.$fuente;
   font-weight: 500;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 * a {
   text-decoration: none;
 }
 body {
-  padding: 40px 150px;
   overflow-x: hidden;
 }
 
@@ -113,6 +114,33 @@ body {
 
     .card__box__image {
       position: relative;
+    }
+  }
+
+  .footer{
+    flex-direction: column;
+    gap: 0 !important;
+
+    .logo-white{
+      justify-content: center;
+    }
+    .footer__elements{
+      flex-direction: column;
+      margin: auto;
+      gap: 40px !important;
+      .footer__text{
+        text-align: center ;
+      }
+      .text__tittle{
+        text-align: center;
+      }
+      .text__normal{
+        justify-content: center;
+      }
+
+    }
+    .footer__logos{
+      justify-content: center;
     }
   }
 

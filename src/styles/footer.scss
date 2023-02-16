@@ -1,54 +1,61 @@
 @use 'styles';
 
-.footerContainer{
-    display: flex;
-    gap: 300px;
+.footerWrapper{
     background-color: styles.$Very-Dark-Violet;
-    width: 135%;
-    height: 300px;
-    padding: 00px 16% 0px 16%;
-    margin-left: -16%;
+    width: 100%;
+    padding: 40px;
 
-    .logo-white{
+    .footer{
         display: flex;
-        fill: #ffffff;
-        margin-top: 80px;
-    }
+        max-width: 1110px;
+        margin: 0 auto;
+        gap: 200px;
 
-    .footer__elements{
-        display: flex;
-        flex-direction: row;
-        margin-top: 80px;
-        gap: 100px;
-        
-        .footer__text{
+        .logo-white{
             display: flex;
-            flex-direction: column;
-            gap: 10px
+            margin-top: 50px;
+            fill: #ffffff;
         }
-        .footer__text a{
-            &:hover{
-                color: styles.$Cyan;
+        
+        .footer__elements{
+            display: flex;
+            margin-top: 50px;
+            justify-content: space-between;
+            gap: 60px;
+
+            .footer__text{
+                flex-direction: column;
+                gap: 10px
             }
-        }
-        .text__tittle{
-            color: #ffffff;
-            font-weight: 700;
-        }
-        .text__normal{
-            color: styles.$Gray;
-        }
+            .footer__text a{
+                &:hover{
+                    color: styles.$Cyan;
+                }
+            }
+            .text__tittle{
+                color: #ffffff;
+                font-weight: 700;
+            }
+            .text__normal{
+                display: flex;
+                color: styles.$Gray;
+            }
+
+        }       
 
         .footer__logos{
             display: flex;
+            
+            margin-top: 50px;
             gap: 20px;
             cursor: pointer;    
         }
         .logo{
+            display: flex;
             fill: #ffffff;
             &:hover{
                 fill: styles.$Cyan;
             }
         }   
-    }       
+    }
 }
