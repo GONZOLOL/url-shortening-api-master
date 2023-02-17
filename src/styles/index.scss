@@ -23,29 +23,109 @@ body {
 }
 
 @media screen and (max-width: 1427px) {
+
+  .navWrapper {
+    .nav {
+      .menuContainer {
+        background-color: styles.$Dark-Violet;
+        position: absolute;
+        padding: 30px 30px;
+        border-radius: 8px;
+        width: calc(100% - 40px);
+        top: 100px;
+        z-index: 2;
+        display: none;
+
+        &.show {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 0 auto;
+          gap: 60px;
+
+          &::before{
+            content: "";
+            position: absolute;
+            display: flex;
+            width: 95%;
+            height: 1px;
+            top: 170px;
+            background-color: styles.$Grayish-Violet;
+          }
+        }
+
+        .nav__left {
+          ul {
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+
+            li {
+              a {
+                color: styles.$white;
+
+                &:hover {
+                  color: styles.$Cyan;
+                }
+              }
+            }
+          }
+        }
+
+        .nav__right {
+          gap: 20px;
+          margin: 0;
+          flex-direction: column;
+          position: relative;
+
+          a {
+            color: styles.$white;
+
+            &:hover {
+              color: styles.$white;
+            }
+          }
+          
+        }
+      }
+
+      .nav__hamburguer {
+        display: block;
+        margin-left: auto;
+      }
+    }
+  }
+
+
   .Container {
     flex-direction: column-reverse;
-    gap: 50px;
-    margin-top: 50px;
+    gap:400px;
     margin-bottom: 60px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 150px auto 90px !important;
+
     .Container__rightImage {
       display: flex;
-      position: static;
-      justify-content: flex-end;
+      position: relative !important;
       svg {
-        position: static;
+        top: -120px !important;
+        left: -130px;
       }
     }
     .Container__leftText {
       text-align: center;
       justify-content: center;
-      align-items: center;
+      align-items: center !important;
       .letter1 {
         font-size: 60px;
-        line-height: 40px;
+        line-height: 50px;
       }
     }
   }
+
 
   .inputContainer__inputGroup{
     padding: 30px 0px;
