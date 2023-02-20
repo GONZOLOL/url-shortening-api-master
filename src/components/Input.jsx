@@ -10,8 +10,17 @@ export default function Input() {
     event.preventDefault();
     const url = event.target.url.value;
 
-    ShrtcodeApi(url)
-      .then(data => updateLocalStorage(data));
+    if (url){
+      document.getElementById("error").innerHTML= "";
+      document.getElementById("url").style.outline= "none";
+      ShrtcodeApi(url)
+      .then( data => { updateLocalStorage(data) } );
+         
+    }else {
+      document.getElementById("error").innerHTML= "Please add a link";
+      document.getElementById("url").style.outline= "4px solid red";
+      console.log("error")
+    }
 
     event.target.reset();
   }
@@ -57,7 +66,6 @@ export default function Input() {
         <div className='shortenerContainer'>
           <form onSubmit={submit} className='shortenerContainer__inputGroup'>
               <input
-                required
                 type='url'
                 id='url'
                 name='url'
@@ -72,6 +80,7 @@ export default function Input() {
                 text="Shorten it!"
               />
           </form>
+          <div id='error'className='inputError' />
         </div>
       </section>
       <section className='resultCard__wrapper'>
