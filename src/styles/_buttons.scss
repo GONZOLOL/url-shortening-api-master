@@ -29,6 +29,29 @@
     border: none;
     padding: 10px 30px;
 }
+.btn--result--card{
+    cursor: pointer;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    user-select: none;
+    border: none;
+    background-color: styles.$Cyan;
+    color: styles.$white;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 30px;
+
+    &:hover{
+        background-color: styles.$alterCyan;
+    }
+
+    &.copied{
+        background-color: styles.$Dark-Violet;
+    }
+}
+
 .btn--main{
     border-radius: 45px;
     font-size: 18px;

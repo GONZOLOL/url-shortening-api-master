@@ -33,9 +33,9 @@ function Header() {
                     </div>
                     
                     <div className='nav__hamburguer'>
-                        <input class="menu-btn" type="checkbox" id="menu-btn" onClick={toggleMovile} />
-                        <label class="menu-icon" for="menu-btn">
-                            <span class="navicon"></span>
+                        <input className='menu-btn' type="checkbox" id="menu-btn" onClick={toggleMovile} />
+                        <label className="menu-icon" htmlFor="menu-btn">
+                            <span className="navicon"></span>
                         </label>
                     </div>
                 </section>
