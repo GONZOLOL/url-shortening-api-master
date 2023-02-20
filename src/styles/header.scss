@@ -1,31 +1,71 @@
 @use 'styles';
+@use 'hamburguer';
 
-.headerWrapper{
+.navWrapper{
     width: 100%;
     
-    .header {
-        display: flex;
-        justify-content: space-between;
+    .nav {
         max-width: 1110px;
+
         margin: 40px auto;
-    
-        .header__left {
-            display: flex;
-            align-items: center;
-            gap: 30px;
-            font-size: 15px;
+
+        display: flex;
+        flex: 1;
+        align-items: center;
+        gap: 40px;
+
+        .nav__logo{
+            display: block;
         }
-        .header__right {
+
+        .menuContainer{
             display: flex;
+            width: 100%;
             align-items: center;
-            justify-content: flex-end;
-            gap: 30px;
+            justify-content: space-between;
+            
+            .nav__left {
+                ul {
+                    list-style: none;
+                    display: flex;
+                    gap: 30px;
+            
+                    li {
+                      a {
+                        color: styles.$Grayish-Violet;
+                        text-decoration: none;
+            
+                        &:hover {
+                          color: styles.$Very-Dark-Blue;
+                        }
+                      }        
+                    }
+                  }
+            }
+            .nav__right {
+                margin-left: auto;
+                display: flex;
+                align-items: center;
+                gap: 30px;
+            
+                a {
+                    color: styles.$Grayish-Violet;
+                    text-decoration: none;
+            
+                    &:hover {
+                    color: styles.$Very-Dark-Blue;
+                    }
+                }
+            }
         }
+        
+        .nav__hamburguer {
+            display: none;
+      
+            &:hover {
+              cursor: pointer;
+            }
+          }
     }
 }
-.header a{
-    color: styles.$Gray;
-    &:hover{
-        color: black;
-    }
-}
+
