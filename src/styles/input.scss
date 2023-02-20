@@ -36,6 +36,16 @@
     }
     
 }
+.shortenerContainer{
+    position: relative;
+}
+.inputError{
+    position: absolute;
+    top: 95px;
+    left: 150px;
+    color: red;
+    
+}
 
 .resultCard__wrapper{
     background-color: styles.$Gray2;

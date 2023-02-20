@@ -2,12 +2,12 @@ import Button from './Button';
 
 export function ResultCard({ originalLink, shortLink }) {
 
-    const copy = document.querySelectorAll('.btn--result--card');
     
     const handleCopy = (event) => {
         const value = event.target.dataset.shortlink;
         navigator.clipboard.writeText(value);
         
+        const copy = document.querySelectorAll('.btn--result--card');
         copy.forEach(y => {
             y.classList.remove('copied');
             y.innerHTML = "Copy";
