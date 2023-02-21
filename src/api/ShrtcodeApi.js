@@ -1,18 +1,17 @@
 export const ShrtcodeApi = (url) => {
 
-  const handleError = (response) => {
+  const request = `${"https://api.shrtco.de/v2/shorten?url="}${url}`; 
+
+  const handleResponse = (response) => {
     if (!response.ok) throw Error(response.status);
     return response;
   }
   
-  const handledFetch = (request) => {
+  const handledFetch = () => {
     return fetch(request)
-    .then(handleError)
+    .then(handleResponse)
+    .then(data => data.json())
   }
 
-  const request = `${"https://api.shrtco.de/v2/shorten?url="}${url}`; 
-
-
-  return handledFetch ( request )
-  .then(response => response.json())
+  return handledFetch();
 };
